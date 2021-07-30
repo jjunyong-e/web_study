@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+</head>
+
+<body>
+
+  <form action="">
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <li><label for="id">아이디<input type="text" autofocus placeholder="4~10자 사이 공백없이" required></label></li>
+      <li><label for="email">이메일<input type="email" required></label></li>
+      <li><label for="Password">비밀번호<input type="password" required placeholder=" 문자와 숫자 특수기호 포함"></label></li>
+      <li><label for="password_check">비밀번호확인<input type="password" required></label></li>
+      <li><label for="selectin">가입경로
+          <select name="selcetin" id="selectin">
+            <option id="blogselect">블로그</option>
+            <option id="friendselect">지인추천</option>
+            <option id="youtubeselect">유튜브</option>
+        </label>
+        </select>
+      </li>
+      <li>
+        <label for="memo">메모
+          <textarea name="memo" id="memo" cols="30" rows="10" placeholder="남길말씀이있다면 여기에"></textarea>
+        </label>
+      </li>
+    </fieldset>
+    <fieldset>
+      <legend>
+        이벤트와 새로운 소식
+      </legend>
+      <input type="radio" name="send" value="메일수신">메일수신
+      <input type="radio" name="send" value="메일수신">메일수신안함
+    </fieldset>
+    <input type="submit" value="가입하기">
+    <input type="submit" value="취소">
+  </form>
+</body>
+
+</html>
